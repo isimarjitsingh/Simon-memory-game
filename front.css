@@ -1,0 +1,248 @@
+body{
+    background-image: url(src/pexels-padrinan-1111318.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+/* for design the form*/
+.main{
+    display: flex;
+    margin-left: 250px ;
+    margin-top: 150px;
+    height: 340px;
+    width:550px;
+    background-color: #4f4e4e;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    margin-top: 16px;
+    margin-left: 20px;
+
+}
+
+.inner-one{
+    height: 300px;
+    width:400px;
+    background-color: #B8E1FF;
+    border: 5px solid white;
+    border-right: none;
+    border-radius: 5%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.inner-two{
+    height:300px ;
+    width: 100px;
+    background-color: white;
+    border: 5px solid #B8E1FF;
+    border-left: none;
+    border-radius: 5%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+/* for designing the label tag*/
+.name-lb{
+    font-family: Helvetica;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-right: 30px;
+}
+
+.material{
+    margin-left: 50px;
+    margin-top: 80px;;
+}
+ 
+
+/* for input tag designing*/
+input{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+}
+
+.input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+}
+
+/* for button */
+button,
+button:focus {
+    font-size: 17px;
+    padding: 10px 40px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(black , white);
+    border: 2px solid rgb(50, 50, 50);
+    border-bottom: 5px solid rgb(50, 50, 50);
+    box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
+    transform: translate(0, -3px);
+    cursor: pointer;
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
+  
+button:active {
+    transform: translate(0, 0);
+    border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+button{
+    margin-left:50px;
+    margin-top: 50px;
+    
+}
+ 
+
+/* other page designing*/
+
+h2{
+    font-family: helvetica;
+    display: flexbox;
+    text-align:right ;
+    color: white;
+    font-size:75px; 
+    text-transform: capitalize;
+    padding-right: 350px;
+}
+
+
+.line{
+    height: 930px;
+    width: 2px;
+    background-color: goldenrod;
+    margin-left: 400px;
+    position:absolute;
+    z-index: -1;
+    margin-top: -700px;
+}
+
+/*for animation part-1*/
+.moder {
+    display: block;
+    width: 84px;
+    height: 84px;
+    margin-left: 1000px;
+    margin-top: -100px;
+    position: relative;
+}
+  
+.moder:before , .moder:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    transform: translate(-50% , -100%)  scale(0);
+    animation: push_401 2s infinite linear;
+}
+  
+.moder:after {
+    animation-delay: 1s;
+}
+  
+@keyframes push_401 {
+    0% , 50% {
+      transform: translate(-50% , 100%)  scale(1)
+    }
+  
+    100% {
+      transform: translate(-50%, -170%) scale(0)
+    }
+}
+
+/*for animation part-2*/
+.moder-two {
+    display: block;
+    width: 84px;
+    height: 84px;
+    margin-left: 1000px;
+    margin-top: -375px;
+    position: relative;
+}
+  
+.moder-two:before , .moder-two:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    transform: translate(-50% , -100%)  scale(0);
+    animation: push_402 2s infinite linear;
+}
+  
+.moder-two:after {
+    animation-delay: 1s;
+}
+  
+@keyframes push_402 {
+    0% , 50% {
+      transform: translate(-50% , -50%)  scale(1)
+    }
+  
+    100% {
+      transform: translate(-50%, 170%) scale(0)
+    }
+}
+
+/* for hover design*/
+
+.main:hover{
+    scale: 1.01;
+    box-shadow: 5px 5px#ccc;
+}
+
+/*for social icons*/
+.img-icons{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    opacity: 0.6;
+}
+
+.main-icon-container{
+    margin-left: 1330px;
+    height: 55px;
+    width: 178px;
+    background-color:#E6E8FA;
+    animation: push_403 2s ;
+}
+
+
+.img-icons:hover{
+    opacity: 3;
+    transform: scale(1.01);
+}
+
+@keyframes push_403 {
+    0% {
+      margin-top: -450px;
+    }
+
+    50%{
+        margin-top: 450px;
+    }
+    
+    100%{
+        margin-top: 0px;
+    }
+}

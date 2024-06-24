@@ -1,0 +1,112 @@
+body{
+    text-align: center;
+    background-image: url(src/HD-wallpaper-castlevania-video-game-dracula-castlevania-simon-belmont.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.game-head{
+    margin: 0 auto;
+    padding-top: 1px;
+    height: 100px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.503);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+}
+
+
+
+.box{
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+    margin: 1.5rem;
+}
+
+.div-container{
+    display: flex;
+    justify-content: center;
+}
+
+#score{
+    height: 200px;
+    width: 180px;
+    background-color: #C8CFA0;
+    margin-top: -600px;
+    margin-left: 1300px;
+    border: 7px grey solid;
+    border-radius: 7%;
+}
+
+.score-inner{
+    height: 80px;
+    width: 130px;
+    background-color: white;
+    border: 2px white solid;
+    border-radius: 10%;
+    margin-top: 50px;
+    margin-left: 25px;
+    font-size:xx-large;
+}
+
+.score-inner>h2{
+    margin-top: 10px;
+}
+
+
+.img-icons{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    opacity: 0.6;
+}
+
+.main-icon-container{
+    margin-top: 450px;
+    height: 55px;
+    width: 178px;
+    background-color:#C8CFA0;
+    animation: push_403 1s infinite ;
+}
+
+@keyframes push_403 {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+.img-icons:hover{
+    opacity: 3;
+    transform: scale(1.01);
+}
+
+
+
+.red{
+    background-color: #d95980;
+}
+
+.green{
+    background-color: #63aac0;
+}
+
+.orange{
+    background-color: #f99b45;
+}
+
+.blue{
+    background-color: #819ff9;
+}
+
+.flash{
+    background-color: white;
+}
