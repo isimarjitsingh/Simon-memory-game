@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simon memory game</title>
+    <link rel="stylesheet" href="front.css">
+</head>
+<body>
+    <h2>simon memory game</h2>
+    <i class="fa-brands fa-github"></i>
+    <div class="main">
+        <div class="container">
+
+            <div class="inner-one">
+                <div class="material">
+                    <form id="myForm" action="">
+                        <label for="name" class="name-lb">NAME</label>
+                        <input type="text" autocomplete="off"  class="input" placeholder="Username" id="name" name="myInput" required>
+                        <button class="register">Register</button>
+                    </form>
+                 </div>     
+            </div>
+
+            <div class="inner-two"></div>
+            
+        </div>
+    </div>
+    <div class="line">
+
+    </div>
+    <span class="moder"></span>
+    <span class="moder-two"></span>
+    <div class="main-icon-container">
+        <span class="icons-container">
+            <a href="https://github.com/isimarjitsingh"><img src="src/github.icon.webp" alt="github profile" class="img-icons"></a>
+        </span>
+        <span class="icons-container">
+            <a href="https://www.linkedin.com/in/simarjit-singh-875235313/"><img src="src/main-linkedin.png" alt="linkedin profile" class="img-icons"></a>
+        </span>
+    </div>
+    <script> 
+    // for storing the input value so that simon.js access it 
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const inputValue = document.getElementById("name").value.trim();
+        console.log(inputValue)// for check the value of inputvalue
+        window.location.href = "simon.html?inputValue=" + encodeURIComponent(inputValue);
+        });
+    </script>
+</body>
+</html>
